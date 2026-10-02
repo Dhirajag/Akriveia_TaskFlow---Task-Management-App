@@ -1,0 +1,15 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/expo/scripts/autolinking'
+
+platform :ios, '13.4'
+prepare_react_native_project!
+
+target 'TaskFlow' do
+  use_expo_modules!
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :hermes_enabled => true
+  )
+end
