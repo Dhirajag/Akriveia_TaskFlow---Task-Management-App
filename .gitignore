@@ -1,5 +1,37 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native Builds & Caches
+android/.gradle/
+android/app/build/
+android/build/
+android/.cxx/
+*.apk
+*.aab
+
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# Environment & Local Configuration
+.env
+.env.local
+.env*.local
+
+# Temporary / Scratch Files
 /delete_ts_files.bat
-/README.md
-/scripts
 /taskflow@1.0.0
-node_modules
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
